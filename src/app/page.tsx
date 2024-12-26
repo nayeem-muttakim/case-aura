@@ -1,3 +1,4 @@
+import { Icons } from "@/components/Icons";
 import MaxWidth from "@/components/MaxWidth";
 import Phone from "@/components/Phone";
 import { Check, Star } from "lucide-react";
@@ -14,7 +15,7 @@ export default function Home() {
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-950 text-5xl md:text-6xl lg:text-7xl">
                 Your Image on a{" "}
-                <span className="bg-green-600 px-2 text-white">Custom</span>{" "}
+                <span className="bg-[#7c3aed] px-2 text-white">Custom</span>{" "}
                 Phone Case
               </h1>
               <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
@@ -26,15 +27,15 @@ export default function Home() {
               <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
                 <div className="space-y-2">
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600" />{" "}
+                    <Check className="h-5 w-5 shrink-0 text-[#7c3aed]" />{" "}
                     High-quality, durable material
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600" /> 5 year
+                    <Check className="h-5 w-5 shrink-0 text-[#7c3aed]" /> 5 year
                     print guarantee
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="h-5 w-5 shrink-0 text-green-600" />
+                    <Check className="h-5 w-5 shrink-0 text-[#7c3aed]" />
                     Modern iPhone models supported
                   </li>
                 </div>
@@ -71,11 +72,11 @@ export default function Home() {
 
                 <div className="flex flex-col justify-between items-center sm:items-start">
                   <div className="flex gap-0.5">
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
-                    <Star className="h-4 w-4 text-green-600 fill-green-600" />
+                    <Star className="h-4 w-4 text-[#7c3aed] fill-[#7c3aed]" />
+                    <Star className="h-4 w-4 text-[#7c3aed] fill-[#7c3aed]" />
+                    <Star className="h-4 w-4 text-[#7c3aed] fill-[#7c3aed]" />
+                    <Star className="h-4 w-4 text-[#7c3aed] fill-[#7c3aed]" />
+                    <Star className="h-4 w-4 text-[#7c3aed] fill-[#7c3aed]" />
                   </div>
 
                   <p>
@@ -99,6 +100,96 @@ export default function Home() {
                 alt=""
               />
               <Phone className="w-64" imgSrc="/testimonials/1.jpg" />
+            </div>
+          </div>
+        </MaxWidth>
+      </section>
+
+      {/* value proposition section */}
+      <section className="bg-slate-100 py-24">
+        <MaxWidth className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
+            <h2 className="order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
+              What our{" "}
+              <span className="relative px-2">
+                customers{" "}
+                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-[#7c3aed]" />
+              </span>{" "}
+              say
+            </h2>
+            <img src="/snake-2.png" className="w-24 order-0 lg:order-2" />
+          </div>
+
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-non lg:grid-cols-2 gap-y-16">
+            <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+              <div className="flex gap-0.5 mb-2">
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+              </div>
+              <div className="text-lg leading-8">
+                <p>
+                  "The case feels durable and I even got a compliment on the
+                  design. Had the case for two months now and{" "}
+                  <span className="p-0 bg-slate-800 text-white">
+                    the image is super clear
+                  </span>
+                  , on the case I had before, the image started fading into
+                  yellow-ish color after a couple of weeks. Love it."
+                </p>
+              </div>
+              <div className="flex gap-4 mt-2">
+                <img
+                  className="rounded-full h-12 w-12 object-cover"
+                  src="/users/user-1.png"
+                  alt="user"
+                />
+                <div className="flex flex-col">
+                  <p className="font-semibold">Jonathan</p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-5 w-5 stroke-[3px] text-[#7c3aed]" />
+                    <p className="text-sm">Verified Purchase</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* second review */}
+            <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+              <div className="flex gap-0.5 mb-2">
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+                <Star className="h-5 w-5 text-[#7c3aed] fill-[#7c3aed]" />
+              </div>
+              <div className="text-lg leading-8">
+                <p>
+                  "I usually keep my phone together with my keys in my pocket
+                  and that led to some pretty heavy scratchmarks on all of my
+                  last phone cases. This one has been holding up pretty well, no
+                  scratches so far.
+                  <span className="p-0 bg-slate-800 text-white">
+                    Looks brand new after about half a year
+                  </span>
+                  . I dig it."
+                </p>
+              </div>
+              <div className="flex gap-4 mt-2">
+                <img
+                  className="rounded-full h-12 w-12 object-cover"
+                  src="/users/user-4.jpg"
+                  alt="user"
+                />
+                <div className="flex flex-col">
+                  <p className="font-semibold">Nathan</p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-5 w-5 stroke-[3px] text-[#7c3aed]" />
+                    <p className="text-sm">Verified Purchase</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </MaxWidth>
