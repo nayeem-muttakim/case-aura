@@ -4,7 +4,7 @@ import { HTMLAttributes, useEffect, useRef, useState } from "react";
 import MaxWidth from "./MaxWidth";
 import { useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { div } from "framer-motion/client";
+
 import Phone from "./Phone";
 
 const PHONES = [
