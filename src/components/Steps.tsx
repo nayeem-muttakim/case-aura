@@ -82,7 +82,7 @@ const Steps = () => {
               {/* separator */}
 
               {i !== 0 ? (
-                <div className="absolute inset-0 hidden w-3 lg:block">
+                <div className="absolute inset-0 hidden  w-3 lg:block">
                   <svg
                     className="h-full w-full text-gray-300"
                     viewBox="0 0 12 82"
