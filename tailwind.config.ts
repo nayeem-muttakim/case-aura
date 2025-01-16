@@ -73,5 +73,15 @@ export default {
       },
     },
   },
+  safelist: [
+    "bg-zinc-900 ",
+    "border-zinc-900",
+    "bg-rose-950",
+    "border-rose-950",
+    "bg-blue-950",
+    "border-blue-950",
+    "bg-cyan-800",
+    "border-cyan-800",
+  ],
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
