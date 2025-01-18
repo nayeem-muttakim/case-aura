@@ -17,27 +17,31 @@ export const MODELS = {
   options: [
     {
       label: "iPhone x",
-      model: "iphonex",
+      value: "iphonex",
     },
     {
       label: "iPhone 11",
-      model: "iphone11",
+      value: "iphone11",
     },
     {
       label: "iPhone 12",
-      model: "iphone12",
+      value: "iphone12",
     },
     {
       label: "iPhone 13",
-      model: "iphone13",
+      value: "iphone13",
     },
     {
       label: "iPhone 14",
-      model: "iphone14",
+      value: "iphone14",
     },
     {
       label: "iPhone 15",
-      model: "iphone15",
+      value: "iphone15",
+    },
+    {
+      label: "iPhone 16",
+      value: "iphone16",
     },
   ],
 } as const;
@@ -71,7 +75,7 @@ export const FINISHES = {
     },
     {
       label: "Textured Finish",
-      value: "texture",
+      value: "textured",
       description: "Soft grippy texture",
       price: PRODUCT_PRICES.finish.textured,
     },
